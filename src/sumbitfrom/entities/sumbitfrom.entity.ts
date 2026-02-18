@@ -6,8 +6,8 @@ export type SumbitfromDocument = Sumbitfrom & Document;
 @Schema({ timestamps: true })
 export class Sumbitfrom {
 
-  @Prop({ required: true })
-  fullName: string;
+  //@Prop({ required: true })
+ // fullName: string;
 
   @Prop({ required: true })
   email: string;
@@ -18,22 +18,20 @@ export class Sumbitfrom {
   @Prop()
   telephoneNumber: string;
 
-  @Prop()
-  location: string;
+ // @Prop()
+  //location: string;
 
-  // ✅ Enum removed (Now dynamic)
-  @Prop()
-  selectArea: string;
+ // @Prop()
+  //selectArea: string;
 
-  // ✅ Enum removed (Now dynamic)
-  @Prop()
-  helpType: string;
+  //@Prop()
+ // helpType: string;
 
   @Prop()
   message: string;
 
-  @Prop({ default: false })
-  consent: boolean;
+ // @Prop({ default: false })
+ // consent: boolean;
 }
 
 export const SumbitfromSchema =

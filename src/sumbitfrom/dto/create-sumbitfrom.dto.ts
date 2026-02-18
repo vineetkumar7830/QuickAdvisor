@@ -8,9 +8,9 @@ import {
 
 export class CreateSumbitfromDto {
 
-  @IsString()
-  @IsNotEmpty()
-  fullName: string;
+ // @IsString()
+ // @IsNotEmpty()
+  //fullName: string;
 
   @IsEmail()
   @IsNotEmpty()
@@ -24,24 +24,24 @@ export class CreateSumbitfromDto {
   @IsString()
   telephoneNumber?: string;
 
-  @IsOptional()
-  @IsString()
-  location?: string;
+ // @IsOptional()
+ // @IsString()
+  //location?: string;
 
   // ✅ Dynamic now (No enum restriction)
-  @IsOptional()
-  @IsString()
-  selectArea?: string;
+  //@IsOptional()
+ // @IsString()
+ // selectArea?: string;
 
   // ✅ Dynamic now (No enum restriction)
-  @IsOptional()
-  @IsString()
-  helpType?: string;
+ // @IsOptional()
+ // @IsString()
+  //helpType?: string;
 
   @IsOptional()
   @IsString()
   message?: string;
 
-  @IsBoolean()
-  consent: boolean;
+ // @IsBoolean()
+//  consent: boolean;
 }

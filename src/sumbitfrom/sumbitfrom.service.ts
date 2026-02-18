@@ -39,9 +39,9 @@ export class SumbitfromService {
   });
 
   await transporter.sendMail({
-    from: `"QuickAdvisor" <${process.env.MAIL_USER}>`,
-    to: 'cosmicsolutionshelp@gmail.com',
-    subject: '📩 New Client Inquiry - QuickAdvisor',
+    from: `"QuickAdvisor" <${process.env.MAIL_FROM}>`,
+    to: process.env.CONTACT_RECEIVER_EMAIL,
+    subject: ' New Client Inquiry - QuickAdvisor',
 
     html: `
     <div style="margin:0;padding:0;background-color:#f4f6f9;font-family:Arial,Helvetica,sans-serif;">

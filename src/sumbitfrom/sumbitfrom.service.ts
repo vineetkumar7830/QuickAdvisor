@@ -40,7 +40,7 @@ export class SumbitfromService {
 
   await transporter.sendMail({
     from: `"QuickAdvisor" <${process.env.MAIL_USER}>`,
-    to: 'vineetvineet8006@gmail.com',
+    to: 'cosmicsolutionshelp@gmail.com',
     subject: '📩 New Client Inquiry - QuickAdvisor',
 
     html: `
